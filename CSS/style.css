@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Ibarra+Real+Nova:ital,wght@1,600&family=Itim&family=Josefin+Sans:wght@300&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300&family=Manrope:wght@500&family=Open+Sans&family=Poppins:wght@400;600&family=Raleway:wght@400;700&family=Roboto:wght@300;400&family=Rubik&family=Unbounded:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Ibarra+Real+Nova:ital,wght@1,600&family=Itim&family=Josefin+Sans:wght@300&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300&family=Manrope:wght@500;700&family=Open+Sans&family=Poppins:wght@400;600&family=Raleway:wght@400;700&family=Roboto:wght@300;400&family=Rubik&family=Unbounded:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 46%, 95%);
+}
+main{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#firstimage{
+    width: 20rem;
+}
+.side{
+    width: 20rem;
+}
+.side h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.side p{
+     font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+#secondimage{
+    height: 3rem;
+    border-radius: 50%;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    flex-direction:row;
+}
+.details h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.details h2{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color:  hsl(212, 23%, 69%);
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-left: 2rem;
+}
+#one{
+    height: 1rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+#row{
+    display: none;
+}
+.hide{
+    background-color:hsl(217, 19%, 35%) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 20rem;
+    border-radius: 0.5rem;
+    top:80%;
+}
+.hide h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+    font-size: 1rem;
+}
+.hide img{
+    height: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+
+@media only screen and (min-width:1280px){ 
+main{
+    height: 100vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}    
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+#firstimage{
+    width: 35%;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+.side{
+    width: 65%;
+    background-color: white;
+}
+.side h1{
+    font-size: 1.6vw;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.side p{
+   
+    font-size: 0.9vw;
+    margin-left: 5%;
+    margin-right: 10%;
+    line-height: 3vh;
+}
+.information{
+    align-items: center;
+}
+.profile{
+    justify-content: space-between;
+    margin-left: 5%;
+}
+#secondimage{
+    height: 6vh;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.details h1{
+    width: 10vw;
+    font-size: 1vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.details h2{
+    font-size: 0.8vw;
+    margin-top: 0;
+    margin-left: 0.5rem;
+}
+.hide{
+    width: 18vw;
+    height: 7vh;
+    border-radius: 1vw;
+    margin-left: 18%;
+    top: 52vh;
+}
+.hide::before{
+    content: '';
+    position: absolute;
+    background-color:hsl(217, 19%, 35%) ;
+    width: 1vw;
+    height: 2vh;
+    bottom: -1.0vh;
+    left:55% ;
+    transform: translateX(-50%)rotate(45deg);
+}
+#one{
+    height: 3.5vh;
+    margin-right: 10%;
+    border-radius: 50%;
+}
+.hide h1{
+    font-size: 1vw;
+}
+.hide img{
+    height: 3vh;
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
+}
+
+}
